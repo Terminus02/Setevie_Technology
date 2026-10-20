@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+
+actor "Пользователь" as User
+
+rectangle "Планировщик событий" {
+    usecase "Регистрация" as UC1
+    usecase "Вход в систему" as UC2
+    usecase "Просмотр списка событий" as UC3
+    usecase "Просмотр события по ID" as UC4
+    usecase "Создание события" as UC5
+    usecase "Удаление события" as UC6
+    usecase "Удаление всех событий" as UC7
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+User --> UC6
+User --> UC7
+
+@enduml
